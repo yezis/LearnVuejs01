@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">{{ message }}</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    // 声明式编程，好处：数据与界面完全解耦
+    const app = new Vue({ // 创建vue实例，并传入一个对象
+        el: '#app', // 用于挂载要管理的元素
+        data: { // 定义数据
+            message: 'hello, vue'
+        }
+    });
+</script>
+
+</body>
+</html>

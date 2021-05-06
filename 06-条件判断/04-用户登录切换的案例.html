@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div id="app">
+    <span v-if="isAccountLogin">
+      <label for="account">用户账号</label>
+      <input type="text" id="account" placeholder="用户账号">
+    </span>
+    <span v-else>
+      <label for="email">用户邮箱</label>
+      <input type="text" id="email" placeholder="用户邮箱">
+    </span>
+    <button @click="isAccountLogin = !isAccountLogin">切换</button>
+  </div>
+  <script src="../js/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        message: '',
+        isAccountLogin: true
+      }
+    })
+  </script>
+</body>
+</html>
