@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <input type="checkbox" value="苹果" v-model="fruit">苹果
+  <input type="checkbox" value="香蕉" v-model="fruit">香蕉
+  <input type="checkbox" value="葡萄" v-model="fruit">葡萄
+  <input type="checkbox" value="芒果" v-model="fruit">芒果
+  <input type="checkbox" value="西瓜" v-model="fruit">西瓜
+  <h2>{{ fruit }}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '',
+      fruit: []
+    }
+  })
+</script>
+</body>
+</html>
